@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
     display: flex;
     flex-direction: column;
 }
@@ -10,18 +15,21 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
     padding: 15px;
 }
 
 .logo {
     display: flex;
     flex-direction: row;
-    margin-left: 350px;
-    margin-right: 350px;
+    flex-wrap: wrap;
+    margin-left: 21%;
+    margin-right: 21%;
 }
 
 .links {
     display: flex;
+    flex-wrap: wrap;
     margin-left: auto;
     gap: 12px;
 }
@@ -38,14 +46,16 @@ body {
 
 .header-box {
     display: flex;
-    margin-left: 350px;
-    margin-right: 350px;
+    flex-wrap: wrap;
+    margin-left: 21%;
+    margin-right: 21%;
     margin-bottom: 30px;
 }
 
 .header-contents {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .header-left {
@@ -80,6 +90,7 @@ button {
 
 .placeholder-box {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-left: auto;
 }
@@ -88,6 +99,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 1;
     background-color: grey;
     width: 400px;
     height: 200px;
@@ -98,8 +110,7 @@ button {
 .info-box {
     display: flex;
     flex-direction: column;
-    margin-left: 350px;
-    margin-right: 350px;
+    flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 15px;
@@ -107,21 +118,24 @@ button {
 
 .info {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
 }
 
 .placeholder-divs {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
-    gap: 150px;
+    gap: 100px;
 }
 
 .box-one, .box-two, .box-three, .box-four {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -147,6 +161,7 @@ button {
 .quote {
     background-color: #E5E7EB;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -158,16 +173,16 @@ button {
 
 .quote-box {
     display: flex;
-    margin-left: 500px;
-    margin-right: 500px;
+    flex-wrap: wrap;
+    margin-left: 21%;
+    margin-right: 21%;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .call-to-action {
-    display: flex;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 21%;
+    margin-right: 21%;
     margin-top: 100px;
     margin-bottom: 100px;
     background-color: #3882F6;
@@ -177,25 +192,21 @@ button {
 
 .blue-box {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     margin-left: 50px;
     margin-right: 50px;
     padding: 20px;
 }
 
-.blue-box-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 .blue-box-left {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-}
-
-.blue-box-right {
-    display: flex;
-    margin-left: 500px;
+    align-self: start;
+    flex-shrink: 1;
 }
 
 #sign-up {
@@ -208,6 +219,7 @@ button {
     border-color: white;
     border-radius: 15px;
     padding: 15px;
+    flex-shrink: 1;
 }
 
 #call-to {
@@ -217,6 +229,7 @@ button {
 .footer {
     background-color: #1F2937;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: row;
